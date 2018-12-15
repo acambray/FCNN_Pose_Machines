@@ -31,17 +31,24 @@ The way the code works is simple.
 We have 
 
 
-There are a couple different models which incorporate the following:
-- Different feature extraction stages: Original, VGG16, SLIM
-- 
 
-<img src="images/results">
-<img src="images/architecture.png">
-![alt text](http://url/to/img.png)
+## F-CNN Convolutional Pose Machine Architecture
+There are a couple different models under /models which incorporate the following:
+* Different feature extraction stages: Original, VGG16, SLIM
+* Different stage sub-module structures (different models
+
+Models can be modified or one can create a new model. Base it off the existing models.
+The image below gives an idea of how the staged approach in this project works. Each stage can contain its own feature extractor and heatmap regressor. Each stage works on the input image and the feature maps from previous stages. Due to local supervision, each stages refines the probability heatmap estimate for each joint.
+<p align="center">
+ <img src="images/General_Framework.PNG">
+</p>
+
 
 ## Dataset
 <p align="center">
- <img src="images/viewpoint_variation.PNG" width=470><br>
+ <img src="images/viewpoint_variation.PNG" width=450><br>
  <img src="images/viewpoint_variation2.PNG" width=650>
+ <img src="images/dataset_input+groundtruth.PNG">
 </p>
+
  
