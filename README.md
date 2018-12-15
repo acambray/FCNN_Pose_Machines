@@ -2,7 +2,7 @@
 
 This is a Python and TensorFlow implementation of Convolutional Pose Machines to infer joint locations from RGB images of quadruped subjects. The general pose-estimation problem can be described as below:
 
-<img src="images/pose_estimation.PNG" width=550>
+<div style="text-align:center"><img src="images/pose_estimation.PNG" width=550></div>
 
 Fully-Convolutional Neural Networks are trained to regress belief maps over the image area which indicate the probability of a specific joint to be in a specific pixel. Therefore, for example, for 12 joints, there are 12 heatmaps.
 
