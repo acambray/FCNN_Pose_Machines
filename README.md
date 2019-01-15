@@ -9,7 +9,7 @@ This is a Python and TensorFlow implementation of Convolutional Pose Machines to
  
 </p>
 
-Fully-Convolutional Neural Networks are trained to regress belief maps over the image area which indicate the probability of a specific joint to be in a specific pixel. Therefore, for example, for 12 joints, there are 12 heatmaps.
+Fully-Convolutional Neural Networks are trained to regress belief maps over the image area which indicate the probability of a specific joint to be in a specific pixel. Therefore, for example, for 12 joints, there are 12 heatmaps. Figure 5 below shows the data from a single training example.
 
 The ground trtuth data was procedurally generated using 3D modelling software MAYA. The parameters that vary are:
 * Quadruped Pose
